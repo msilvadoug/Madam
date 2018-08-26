@@ -1,0 +1,148 @@
+<ion-header>
+    <ion-navbar>
+      </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>  
+  
+    <ion-searchbar
+      [(ngModel)]="search"
+      [showCancelButton]="shouldShowCancel">
+    </ion-searchbar>
+  
+    <h4>Temas relevantes</h4>
+    
+    <table class="container-home">
+      <tr>
+        <td>
+          <button ion-button icon-end style="background:rgb(48, 48, 255)">
+            Marketing Digital
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </td>
+        <td>
+          <button ion-button icon-end style="background:rgb(22, 131, 98)">
+            Investimentos
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button ion-button icon-end style="background:rgb(172, 94, 172)" (click)="tersteJSON()">
+            Novas tecnologias
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </td>
+        <td>
+          <button ion-button icon-end style="background:rgb(0, 0, 0)" (click)="btnGestaoFinancas()">
+            Gestão de finanças
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </td>
+      </tr>
+    </table>
+    
+    <h4>Eventos<h5 class="container-vertodos">Ver todos</h5></h4>
+    
+    <button ion-item (click)="btnTema()">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>18 Today</ion-col>
+          <ion-col col-8>
+              <h4>A gestão de tempo, com tecnologia</h4>
+              <p>São Paulo, SP</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+    <button ion-item (click)="btnTema()">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>23 SAT</ion-col>
+          <ion-col col-8>
+              <h4>A gestão de tempo, com tecnologia</h4>
+              <p>São Paulo, SP</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+    <button ion-item (click)="btnTema()">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>15 SAT</ion-col>
+          <ion-col col-8>
+              <h4>A gestão de tempo, com tecnologia</h4>
+              <p>São Paulo, SP</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+  
+      <h4>Cursos<h5 class="container-vertodos">Ver todos</h5></h4>
+  
+      <ion-slides pager>
+        <ion-slide>
+          <button ion-item (click)="btnCursos()">
+          <img src="../../assets/imgs/foto.jpg"/>
+            <ion-card-content>
+              <h2><b>Título do curso</b></h2>
+              <p>85% dos empreendedores gostaram desse curso.</p>
+            
+              <ion-row>
+                  <ion-col>
+                  <button ion-button icon-start clear small>
+                      <ion-icon name="thumbs-up"></ion-icon>
+                      <div>12 Likes</div>
+                  </button>
+                  </ion-col>
+                  <ion-col>
+                  <button ion-button icon-start clear small>
+                      <ion-icon name="text"></ion-icon>
+                      <div>4 Comments</div>
+                  </button>
+                  </ion-col>
+                  <ion-col center text-center>
+                  <ion-note>
+                      11h ago
+                  </ion-note>
+                  </ion-col>
+              </ion-row>
+
+            </ion-card-content>
+          </button>
+        </ion-slide>
+      
+        <ion-slide>
+          <button ion-item (click)="btnCursos()">
+          <img src="../../assets/imgs/foto.jpg"/>
+            <ion-card-content>
+              <h2><b>Título do curso</b></h2>
+              <p>85% dos empreendedores gostaram desse curso.</p>
+            
+              <ion-row>
+                  <ion-col>
+                  <button ion-button icon-start clear small>
+                      <ion-icon name="thumbs-up"></ion-icon>
+                      <div>12 Likes</div>
+                  </button>
+                  </ion-col>
+                  <ion-col>
+                  <button ion-button icon-start clear small>
+                      <ion-icon name="text"></ion-icon>
+                      <div>4 Comments</div>
+                  </button>
+                  </ion-col>
+                  <ion-col center text-center>
+                  <ion-note>
+                      11h ago
+                  </ion-note>
+                  </ion-col>
+              </ion-row>
+              
+            </ion-card-content>
+          </button>
+          </ion-slide>
+        </ion-slides>
+  </ion-content>
+  

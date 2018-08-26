@@ -1,0 +1,18 @@
+<ion-content class="login-content" padding>
+
+  <img src="../../assets/imgs/logo.png" />
+
+  <div class="inputClass">
+      <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="email" required></ion-input>
+      <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required></ion-input>
+  </div>
+      
+
+  <div class="btnContainer">
+
+    <button (click)="doLogin()">Entrar</button>
+    <button >Registrar</button>
+
+  </div>
+
+</ion-content>

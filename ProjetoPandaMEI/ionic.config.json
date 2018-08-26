@@ -1,0 +1,7 @@
+{
+  "name": "ProjetoPandaMEI",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

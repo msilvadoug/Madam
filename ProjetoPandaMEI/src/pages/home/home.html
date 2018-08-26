@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pagina Inicial</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  
+  <ion-searchbar
+    [(ngModel)]="search"
+    [showCancelButton]="shouldShowCancel">
+  </ion-searchbar>
+
+  <h4>Temas relevantes</h4>
+  
+  <table class="container-home">
+    <tr>
+      <td>
+        <button ion-button icon-end>
+          Marketing Digital
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </td>
+      <td>
+        <button ion-button icon-end>
+          Investimentos
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button ion-button icon-end>
+          Novas tecnologias
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </td>
+      <td>
+        <button ion-button icon-end>
+          Gestão de finanças
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </td>
+    </tr>
+  </table>
+  
+  <h4>Eventos<h5 class="container-vertodos">Ver todos</h5></h4>
+  
+  <button ion-item (click)="buttonOpenCalendar()">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>18 Today</ion-col>
+        <ion-col col-8>
+            <h4>A gestão de tempo, com tecnologia</h4>
+            <p>São Paulo, SP</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </button>
+  <button ion-item (click)="buttonOpenCalendar()">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>23 SAT</ion-col>
+        <ion-col col-8>
+            <h4>A gestão de tempo, com tecnologia</h4>
+            <p>São Paulo, SP</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </button>
+  <button ion-item (click)="buttonOpenCalendar()">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>15 SAT</ion-col>
+        <ion-col col-8>
+            <h4>A gestão de tempo, com tecnologia</h4>
+            <p>São Paulo, SP</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <h4>Cursos<h5 class="container-vertodos">Ver todos</h5></h4>
+
+    <ion-slides pager>
+      <ion-slide>
+        <img src="../../assets/imgs/foto.jpg"/>
+        <ion-card-content>
+          <h2><b>Título do curso</b></h2>
+          <p>85% dos empreendedores gostaram desse curso.</p>
+        </ion-card-content>
+      </ion-slide>
+    
+      <ion-slide>
+          <img src="../../assets/imgs/foto.jpg"/>
+          <ion-card-content>
+            <h2><b>Título do curso</b></h2>
+            <p>85% dos empreendedores gostaram desse curso.</p>
+          </ion-card-content>
+        </ion-slide>
+      </ion-slides>
+</ion-content>

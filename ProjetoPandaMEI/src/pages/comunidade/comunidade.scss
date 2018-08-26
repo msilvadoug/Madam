@@ -1,0 +1,68 @@
+page-comunidade {
+
+    ion-list {
+        ion-icon {
+            float: right;
+        }
+    }
+
+    .horizontalScroll {
+        background: green !important;
+        height: 200px;
+
+        ion-segment-button {
+            background:blue !important;
+            border:2px solid black !important;
+            height: 150px !important;
+            margin: 2px;
+            text-align: center;
+        }
+    }
+
+    .buttonVerGestao
+    {
+        background: rgb(240, 154, 56) !important;
+        height: 80px;
+        margin: 10px;
+    }
+    
+    .perguntasFrequentes
+    {
+        font-size: 2px;
+    }
+    
+    .container-vertodos
+    {
+        font-size: 13px;
+        float: right;
+    }
+
+    .card-background-page {
+
+        text-align: center;
+
+        ion-card {
+          position: relative;
+          text-align: center;
+          width: fit-content;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+}

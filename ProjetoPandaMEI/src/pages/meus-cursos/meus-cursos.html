@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+      </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <h3>Pagina da Meus Cursos</h3>
+  
+  <ion-list>
+
+    <ion-item *ngFor="let curso of cursos">
+      <div class="classCurso">
+        <div class="imgClassCurso">
+          <img [src]="curso.image" alt="Weather forecast" style="float:left; position: relative;"/>
+        </div>
+        
+        <div class="dadosClassCurso">
+            <p>Curso: {{curso.name}} </p>
+            <p>Atualizada em: {{curso.updated}}</p>
+            <p>Category: {{curso.category}}</p>
+            <p>Rating: {{cursos.rating}}</p>
+            <p>Url: {{curso.pageurl}}</p>
+        </div>
+      </div>
+    </ion-item>
+
+
+  </ion-list>
+    
+  </ion-content>
+  
